@@ -13,6 +13,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { red } from '@material-ui/core/colors';
 import { useHistory } from 'react-router';
 import { Button } from '@material-ui/core';
+import { Link } from 'react-scroll';
 
 
 const drawerWidth = 240;
@@ -49,6 +50,10 @@ const bhuapur =()=>{
   history.push("./bhuapur")
 }
 
+const upazila =()=>{
+  history.push("./home") 
+}
+
 
 
 
@@ -60,7 +65,7 @@ const bhuapur =()=>{
       <AppBar position="fixed" className={classes.appBar} style={{backgroundColor:'black', color:red[600]}}>
         <Toolbar>
           <Typography variant="h6" noWrap>
-           Upazila's
+           <Link onClick={upazila}>Upazila's</Link>
           </Typography>
         </Toolbar>
       </AppBar>

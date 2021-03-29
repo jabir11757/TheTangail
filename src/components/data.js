@@ -12,7 +12,7 @@ export const LookitData =[
     {
         title:"Owao1 ",
         image:Village1 ,
-        description:"Task management is defined as the process of handling the entire life-cycle of a task,right from planning to tracking to execution.It helps teams track tasks from the beginning, setting deadlines, prioritizing tasks,and assigning them to the right people. It ensures projects stay on track and get completed on time."
+        description:"Task management is defined as te process of handling the entire life-cycle of a task,right from planning to tracking to execution.It helps teams track tasks from the beginning, setting deadlines, prioritizing tasks,and assigning them to the right people. It ensures projects stay on track and get completed on time."
     },
     {
         title:"Owao2 ",
