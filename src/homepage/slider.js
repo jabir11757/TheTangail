@@ -14,6 +14,7 @@ import Slider8 from "../components/image/putput9.jpg";
 import Slider9 from "../components/image/putput10.jpg";
 import Slider10 from "../components/image/putput11.png";
 import Slider11 from "../components/image/putput12.jpg";
+import Slider12 from "../components/image/putput13.jpg";
 import { Typography,Box,Card } from "@material-ui/core";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -35,6 +36,7 @@ const sliderImages = [
     Slider9,
     Slider10,
     Slider11,
+    Slider12,
     
   ];
 

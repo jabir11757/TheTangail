@@ -19,6 +19,7 @@ const Main = () => {
                    <Route exact path= "/" component={Home} />
                    <Route exact path= "/navigation" component={ClippedDrawer}  />
                    <Route exact path= "/bhuapur" component={Bhuapur} />
+                   <Route exact path= "/home" component={Home}/>
                </Switch>
              </BrowserRouter>
       
