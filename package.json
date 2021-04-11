@@ -1,6 +1,6 @@
 {
   "name": "zero",
-  "homepage": "https://jabir11757.github.io/TheTangail",
+  "homepage": "https://jabir11757.github.io/thetangail",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,12 +48,17 @@
   },
   "devDependencies": {
     "gh-pages": "^3.1.0"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jabir11757/TheTangail.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jabir11757/TheTangail/issues"
   }
 }
-
-
-
-
-
-
-
