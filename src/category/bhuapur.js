@@ -68,13 +68,13 @@ export default class Bhuapur extends Component {
 
                     <div>
                             <div
-                            style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                width: "100%",
-                            }}
-                            >
-                            <img src={sliderImages} style={{ height: 300, width: "100%" }} />
+                              style={{
+                                  display: "flex",
+                                  justifyContent: "center",
+                                  width: "100%",
+                              }}
+                              >
+                              <img src={sliderImages} style={{ height: 300, width: "100%" }} />
                             </div>
                     </div>
 
