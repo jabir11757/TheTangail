@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 // import { useStyles } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
-// import Drawer from '@material-ui/core/Drawer';
+import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import ListItem from '@material-ui/core/ListItem';
 import { red } from '@material-ui/core/colors';
 import { useHistory} from 'react-router';
-import { Button } from '@material-ui/core';
+import { Box, Button } from '@material-ui/core';
 // import TabLayout from 'react-tab-layout'
 // import { Link } from 'react-scroll';
 import "./navigation.css"
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
 export default function ClippedDrawer() {
 
 
-  const [inHover, setHover] = useState(false);
+  const [inHover, setHover] = useState();
 
 
 
@@ -113,64 +113,63 @@ const tangail =()=>{
         
         </Toolbar>
       </AppBar>
-      {/* <Drawer
+      <Drawer
         className={classes.drawer}
         variant="permanent"
         classes={{
           paper: classes.drawerPaper,
         }}
-      > */}
+      >
     <Toolbar />
     <div>
     {/* className={classes.drawerContainer} */}
 
-    { inHover && (
-      <List>
-       
+    { inHover && (  
+                  
+                      <List style={{visibility:'inherit'}}>
                         <ListItem >
-                           <Typography className="pointer" onClick={tangail}>Tangail</Typography>
-                         </ListItem>
-                         <ListItem>
-                           <Typography className="pointer" onClick={basail}>Basail</Typography>
-                         </ListItem>
-                         <ListItem>
-                           <Typography className="pointer" onClick={ghatail}>Ghatail</Typography>
-                         </ListItem>
-                         <ListItem>
-                           <Typography className="pointer" onClick={bhuapur}>Bhuapur</Typography>
-                         </ListItem>
-                         <ListItem>
-                           <Typography className="pointer" onClick={gopalpur}>Gopalpur</Typography>
-                         </ListItem>
-                         <ListItem>
-                           <Typography className="pointer" onClick={madhupur}>Madhupur</Typography>
-                         </ListItem>
-                         <ListItem>
-                           <Typography className="pointer" onClick={shakhipur}>Shakhipur</Typography>
-                         </ListItem>
-                         <ListItem>
-                           <Typography className="pointer" onClick={nagarpur}>Nagarpur</Typography>
-                         </ListItem>
-                         <ListItem>
-                           <Typography className="pointer" onClick={mirjapur}>Mirjapur</Typography>
-                         </ListItem>
-                         <ListItem>
-                           <Typography className="pointer" onClick={kalihati}>Kalihati</Typography>
-                         </ListItem>
-                         <ListItem>
-                           <Typography className="pointer" onClick={delduar}>Delduar</Typography>
-                         </ListItem>
-                         <ListItem>
-                           <Typography className="pointer" onClick={dhanbari}>Dhanbari</Typography>
-                         </ListItem>
-      
-      </List>
-
+                            <Typography className="pointer" onClick={tangail}>Tangail</Typography>
+                          </ListItem>
+                          <ListItem>
+                            <Typography className="pointer" onClick={basail}>Basail</Typography>
+                          </ListItem>
+                          <ListItem>
+                            <Typography className="pointer" onClick={ghatail}>Ghatail</Typography>
+                          </ListItem>
+                          <ListItem>
+                            <Typography className="pointer" onClick={bhuapur}>Bhuapur</Typography>
+                          </ListItem>
+                          <ListItem>
+                            <Typography className="pointer" onClick={gopalpur}>Gopalpur</Typography>
+                          </ListItem>
+                          <ListItem>
+                            <Typography className="pointer" onClick={madhupur}>Madhupur</Typography>
+                          </ListItem>
+                          <ListItem>
+                            <Typography className="pointer" onClick={shakhipur}>Shakhipur</Typography>
+                          </ListItem>
+                          <ListItem>
+                            <Typography className="pointer" onClick={nagarpur}>Nagarpur</Typography>
+                          </ListItem>
+                          <ListItem>
+                            <Typography className="pointer" onClick={mirjapur}>Mirjapur</Typography>
+                          </ListItem>
+                          <ListItem>
+                            <Typography className="pointer" onClick={kalihati}>Kalihati</Typography>
+                          </ListItem>
+                          <ListItem>
+                            <Typography className="pointer" onClick={delduar}>Delduar</Typography>
+                          </ListItem>
+                          <ListItem>
+                            <Typography className="pointer" onClick={dhanbari}>Dhanbari</Typography>
+                          </ListItem>
+                    </List>
+              
      )} 
       
       
     </div>
-  {/* </Drawer> */}
+  </Drawer>
   <main className={classes.content}>
     <Toolbar />
        
